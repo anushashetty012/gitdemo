@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+file 2- line 1
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter a string");
+		String str=sc.nextLine();
+		int length=str.length();
+file 2- line 2
+		if(str.charAt(0)==str.charAt(length-2)&& str.charAt(1)==str.charAt(length-1))
+		{
+		    str=str.substring(2,length-2);
+		    System.out.println(str);
+		}
+		else{
+		    System.out.println(str);
+		}
+	}
+file 2- line 3
+}
