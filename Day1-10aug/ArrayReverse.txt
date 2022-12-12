@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main
+{
+	//Logic for reversing array
+	public static int[] reverse(int[] arr, int n)
+file 1 - line 1
+	{
+		int[] rev = new int[n];
+		int i=0;
+		for(int j=n-1;j>=0;j--)
+		{
+			rev[i]=arr[j];
+			i++;
+		}
+		return rev;
+	}
+	public static void main(String[] args) {
+		int i,n,j;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of elements");
+		n=sc.nextInt();
+file 1 - line 1
+		int arr[]=new int[n];
+		//Storing into array
+		System.out.println("Enter the elements");
+		for(i=0;i<n;i++)
+		    arr[i]=sc.nextInt();
+		System.out.println("Reversed array is:");
+		int[] result = reverse(arr,n);
+		for(i=0;i<n;i++)
+			System.out.println(result[i]);		
+	}
+}
